@@ -1,72 +1,74 @@
-# 🧠 AI Therapist Chatbot (Flask, ML & RAG Architecture)
+# 🧠 Therapist Chatbot
 
-> An AI and Machine Learning powered virtual therapist application that uses Retrieval-Augmented Generation (RAG) and predictive ML models to analyze user profiles and provide context-aware mental health support.
+**Educational conversational mental-health support prototype**
 
----
+A project exploring AI-assisted conversations about emotional well-being. The existing project description references Flask, machine learning, and retrieval-augmented generation (RAG); these technical details **have not been verified against the nested source archive**.
 
-## 📌 Table of Contents
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [System Architecture](#-system-architecture)
-- [Tech Stack](#-tech-stack)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation & Setup](#installation--setup)
-- [Usage Guide](#-usage-guide)
-- [API Endpoints](#-api-endpoints)
-- [Future Roadmap](#-future-roadmap)
-- [Disclaimer](#-disclaimer)
-- [Contributing](#-contributing)
-- [License & Contact](#-license--contact)
+> **Not a medical product.** This repository is not a substitute for a licensed therapist, emergency service, diagnosis, or professional treatment.
 
----
+## Overview
 
-## 📖 Overview
+The prototype is intended to explore how software can accept a user's description of feelings or experiences and return supportive conversational output. It is an **educational** project; model accuracy, clinical safety, deployed APIs, and reliability are not established.
 
-**Therapist Chatbot** is a web-based mental health support assistant built with **Python**, **Flask**, **Machine Learning**, and **RAG (Retrieval-Augmented Generation)**. By combining user demographics (**Name, Age, Gender**) and textual feelings/descriptions with a specialized mental health knowledge base, the system screens for conditions like anxiety and depression while returning grounded, empathetic, and therapeutically relevant responses.
+## Repository contents
 
----
-
-## ✨ Key Features
-
-* 👤 **Demographic & Profile Context:** Evaluates queries using user parameters (Name, Age, Gender) for personalized interactions.
-* 📚 **Retrieval-Augmented Generation (RAG):** Fetches verified therapeutic knowledge and coping mechanisms from a clinical document index to prevent hallucinations.
-* 🤖 **AI & ML Classification Engine:** Analyzes input text to identify emotional indicators such as Anxiety, Depression, Stress, and Burnout.
-* 🔌 **Flask REST API Architecture:** Modular RESTful API backend handling data pre-processing, vector search, and model inference.
-* 💻 **Interactive HTML/CSS Frontend:** Simple, clean, and empathetic web user interface for real-time conversation.
-
----
-
-## 🏗️ System Architecture
+The actual project is inside two nested archives:
 
 ```text
- [ User Profile Input: Name, Age, Gender, Description ]
-                           │
-                           ▼
-                 [ HTML / JS Frontend ]
-                           │
-                           ├── JSON REST Request
-                           ▼
-                  [ Flask Backend API ]
-                           │
-        ┌──────────────────┴──────────────────┐
-        ▼                                     ▼
- [ ML Classifier ]                 [ RAG Retrieval Engine ]
- (Predicts: Anxiety,               (Vector DB / Document Index
-  Depression, Normal, etc.)         Retrieves Therapeutic Advice)
-        │                                     │
-        └──────────────────┬──────────────────┘
-                           ▼
-               [ Contextual Response Generator ]
-                           │
-                           ▼
-              [ User Output & Chat Interface ]
-🛠️ Tech StackCategoryTechnologyFrontendHTML5, CSS3, JavaScriptBackend FrameworkFlask (Python REST API)AI / RAG PipelineLangChain / LlamaIndex / Vector Store (FAISS / Chromadb)Machine Learning & NLPScikit-Learn, NLTK / Pandas / NumPyModel PersistenceJoblib / Pickle🚀 Getting StartedFollow these instructions to set up and run the AI Therapist Chatbot locally.PrerequisitesPython 3.8 or higher installed on your system.Installation & SetupClone the RepositoryBashgit clone [https://github.com/syedasad09/Therapist-Chatbot.git](https://github.com/syedasad09/Therapist-Chatbot.git)
-cd Therapist-Chatbot
-Create and Activate Virtual EnvironmentBashpython -m venv venv
-source venv/bin/activate        # On Linux/Mac
-# venv\Scripts\activate          # On Windows
-Install DependenciesBashpip install -r requirements.txt
-Run the Flask ApplicationBashpython app.py
-Access in BrowserOpen your browser and navigate to:HTTP[http://127.0.0.1:5000/](http://127.0.0.1:5000/)
-💡 Usage GuideUser Profile: Fill in your basic details (Name, Age, and Gender).Describe Feelings: Type out how you are feeling or describe your thoughts/mood in the input text box.Analyze / Chat: Submit the query. The ML engine classifies the emotional state while the RAG module retrieves relevant therapeutic guidance to form the final answer.📡 API EndpointsMethodEndpointDescriptionPayload ExampleGET/Serves the HTML web interfaceN/APOST/api/predictAccepts user details, retrieves RAG context, and returns ML classification & guidance{"name": "John", "age": 22, "gender": "Male", "description": "I feel constantly overwhelmed..."}⚠️ DisclaimerThis application is an educational AI project and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of a qualified mental health provider with any questions regarding a medical condition.🗺️ Future Roadmap[ ] Integration with advanced LLMs (e.g., Llama 3 / GPT-4) as the RAG generation backend.[ ] Emergency support hotlines & immediate crisis intervention triggers.[ ] User sentiment tracking & history visualization over time.[ ] Multi-language support.🤝 ContributingContributions are welcome! If you'd like to improve model accuracy, update the RAG knowledge base, or enhance the UI design:Fork the ProjectCreate your Feature Branch (git checkout -b feature/NewTherapyFeature)Commit your Changes (git commit -m 'Add new feature')Push to the Branch (git push origin feature/NewTherapyFeature)Open a Pull Request✉️ License & ContactDistributed under the MIT License. See LICENSE for more information.GitHub: @syedasad09Project Link: https://github.com/syedasad09/Therapist-Chatbot
+Therapist-Chatbot/
+├── README.md
+└── Project - Therapist Chatbot.zip
+    └── CM-Project - Copy.rar
+        └── [source files require separate extraction]
+```
+
+Download [`Project - Therapist Chatbot.zip`](<Project - Therapist Chatbot.zip>) and extract the inner RAR with a RAR-compatible tool.
+
+## Project goals
+
+- Explore user-entered text describing feelings or mood.
+- Experiment with conversational interfaces and natural-language processing.
+- Study responsible response design for sensitive topics.
+- Evaluate, rather than assume, any machine-learning or retrieval features in the extracted code.
+
+## Technology
+
+**Undetermined from directly browsable source files.** Earlier descriptions mention Python, Flask, ML, and RAG. Verify actual dependencies, models, and entry points after extracting the inner RAR.
+
+## Getting started
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/syedasad09/Therapist-Chatbot.git
+   cd Therapist-Chatbot
+   ```
+
+2. Extract the ZIP file, then extract `CM-Project - Copy.rar`.
+3. Review the extracted file structure for an application entry point, dependency manifest, and configuration.
+4. Create a local development environment that matches the extracted project.
+5. Do **not** use the chatbot with real patient information without a proper security, privacy, and safety assessment.
+
+A run command is intentionally omitted because an executable entry point has not been confirmed.
+
+## Safety, privacy, and limitations
+
+- Do not use software responses for medical diagnosis or emergency decisions.
+- Do not commit real conversations, names, personal health information, or API keys.
+- AI output may be inaccurate or inappropriate.
+- Add crisis-handling design, safety evaluation, and professional clinical review before any real-world mental-health use.
+
+## Future documentation improvements
+
+- Publish accessible source files rather than nested archives.
+- Add verified architecture and model information.
+- Describe actual API routes, screens, tests, and limitations.
+- Include example inputs using entirely synthetic data.
+
+## Maintainer
+
+[@syedasad09](https://github.com/syedasad09) · [Repository](https://github.com/syedasad09/Therapist-Chatbot)
+
+## License
+
+No repository-level `LICENSE` file is present.
